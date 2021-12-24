@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+:root {
+  --survey-width: 460px;
+}
+.container {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(45deg, #3a0220, #1a0530);
+}
+header {
+  color: white;
+}
+h1 {
+  transition: 0.3s;
+}
+h1:hover {
+  font-size: 250%;
+  transition: 0.5s;
+}
+.survey-form {
+  background: linear-gradient(90deg, #292947, #2f3493);
+  border-radius: 1%;
+  border-width: 10px;
+  padding: 30px;
+  text-align: left;
+  line-height: 1.4;
+  border: none;
+  width: 580px;
+  margin: 30px;
+  color: white;
+  text-indent: 4px;
+  font-size: 14px;
+}
+button,
+input,
+#dropdown {
+  border: none;
+  width: 100%;
+  height: 25px;
+  margin: 5px;
+  text-indent: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+.input-radio,
+.input-checkbox {
+  height: auto;
+  width: 20px;
+}
+.input {
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+#div-input,
+#div-checkbox {
+  display: grid;
+}
+#feature {
+  margin-top: 20px;
+}
+button {
+  background-color: #37af65;
+  color: whitesmoke;
+  border-radius: 2px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 32px;
+  transition: 0.5s;
+}
+button:hover {
+  font-size: 130%;
+  transition: 0.5s;
+  height: 45px;
+}
+#comment {
+  width: 99%;
+  height: 100px;
+  font-family: 'Poppins', sans-serif;
+  text-indent: 5px;
+  margin-left: 5px;
+}
