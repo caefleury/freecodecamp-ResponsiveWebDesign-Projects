@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+html {
+  font-size: 20px;
+}
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+#navbar {
+  height: auto;
+  width: 380px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 20px;
+  background-color: #00e88f;
+  border-radius: 35px;
+}
+body > nav > ul > header {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+#nav-ul {
+  list-style-type: none;
+}
+.nav-link {
+  padding: 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+.nav-link:hover {
+  background-color: #111111;
+  border-radius: 15px;
+  width: fit-content;
+}
+.nav-link:hover a {
+  color: white;
+}
+a {
+  color: #111111;
+  text-decoration: none;
+}
+
+main {
+  margin-left: 430px;
+  height: auto;
+  width: 75%;
+}
+h1 {
+  transition: 0.1s;
+}
+h1:hover {
+  border-bottom: 2px solid #111111;
+  width: fit-content;
+  transition: 0.1s;
+}
+#footer-link {
+  background-color: #00e88f;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+
+  #navbar {
+    background-color: #00e88f;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  main {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}

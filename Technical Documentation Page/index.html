@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="style.css">
+  <!--https://codepen.io/freeCodeCamp/full/NdrKKL-->
+</head>
+
+<body>
+  <nav id="navbar">
+    <ul id="nav-ul">
+      <header> Python Documentation</header>
+      <li class="nav-link"><a href="#intro">Introduction</a></li>
+      <li class="nav-link"><a href="#popular">Why is Python so popular?</a></li>
+      <li class="nav-link"><a href="#jobs">What types of jobs use Python?</a></li>
+      <li class="nav-link"><a href="#hello-world">Hello World</a></li>
+      <li class="nav-link"><a href="#variables">Variables and Types</a></li>
+      <li class="nav-link"><a href="#declaring-variables">Declaring variables</a></li>
+      <li class="nav-link"><a href="#conditions">Conditions</a></li>
+      <li class="nav-link"><a href="#functions">Functions</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="intro">
+      <header>
+        <h1>Introduction</h1>
+      </header>
+      <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.</p>
+      <p>What is Python used for?</p>
+      <ul>
+        <li>Data analysis and machine learning</li>
+        <li>Web development</li>
+        <li>Automation or scripting</li>
+        <li>Software testing and prototyping</li>
+        <li>Everyday tasks</li>
+      </ul>
+    </section>
+    <section class="main-section" id="popular">
+      <header>
+        <h1>Why is Python so popular?</h1>
+      </header>
+      <p>Python is popular for a number of reasons. Here's a deeper look at what makes it so versatile and easy to use for coders:</p>
+      <ul>
+        <li>It has a <b>simple syntax </b>that mimics natural language, so it's easier to read and understand. This makes it quicker to build projects, and faster to improve on them.</li>
+        <li>It's versatile. Python can be used for many different tasks, from web development to machine learning.</li>
+        <li>Python's archive of modules and libraries—bundles of code that third-party users have created to expand Python's capabilities—is vast and growing.</li>
+      </ul>
+
+    </section>
+    <section class="main-section" id="jobs">
+      <header>
+        <h1>What types of jobs use Python?</h1>
+      </header>
+      <p>Since python is a general-purpose language, it's used across a variety of fields and industries. These are just a few job titles that may use Python:</p>
+      <ul>
+        <li>Developer</li>
+        <li>Data analyst</li>
+        <li>Data scientist</li>
+        <li>Cloud architect</li>
+      </ul>
+    </section>
+    <section class="main-section" id="hello-world">
+      <header>
+        <h1>Hello World</h1>
+      </header>
+      <p>To get started with writing Python, open the IDE and write your first "Hello world" Python code:</p>
+
+      <code>print("Hello World")</code>
+
+    </section>
+
+    <section class="main-section" id="variables">
+      <header>
+        <h1>Variables and Types</h1>
+      </header>
+      <p>Python is completely object oriented, and not "statically typed". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object.<br>
+        This tutorial will go over a few basic types of variables.
+      </p>
+    </section>
+    <section class="main-section" id="declaring-variables">
+      <header>
+        <h1>Declaring variables</h1>
+      </header>
+      <h3>Numbers</h3>
+      <p>Python supports two types of numbers - integers(whole numbers) and floating point numbers(decimals). (It also supports complex numbers, which will not be explained in this tutorial). </p>
+
+      <p>To define an integer, use the following syntax:</p>
+
+      <code>myint = 7 <br>
+        print(myint)</code>
+
+      <p>To define a floating point number, you may use one of the following notations:</p>
+
+      <code>myfloat = 7.0 <br>
+      print(myfloat) <br>
+      myfloat = float(7) <br>
+      print(myfloat)</code>
+
+      <h3>Strings</h3>
+      <p>Strings are defined either with a single quote or a double quotes.</p>
+      <code>mystring = 'hello'<br>
+      print(mystring) <br>
+      mystring = "hello" <br>
+      print(mystring) 
+    </code>
+    </section>
+    <section class="main-section" id="conditions">
+      <header>
+        <h1>Conditions</h1>
+      </header>
+      <p>Python uses boolean logic to evaluate conditions. The boolean values True and False are returned when an expression is compared or evaluated. For example:</p>
+      <code>x = 2 <br>
+      print(x == 2) # prints out True <br>
+      print(x == 3) # prints out False <br>
+      print(x < 3) # prints out True</code>
+      <p>Notice that variable assignment is done using a single equals operator "=", whereas comparison between two variables is done using the double equals operator "==". The "not equals" operator is marked as "!=".</p>
+
+      <h3>Boolean operators</h3>
+      <p>The "and" and "or" boolean operators allow building complex boolean expressions, for example:</p>
+      <code>name = "John" <br>
+      age = 23 <br>
+      if name == "John" and age == 23: <br>
+      &nbsp print("Your name is John, and you are also 23 years old.") <br>
+      
+      if name == "John" or name == "Rick": <br>
+      &nbsp print("Your name is either John or Rick.")</code>
+      <h3>The "in" operator</h3>
+      <p>The "in" operator could be used to check if a specified object exists within an iterable object container, such as a list:</p>
+      <code>name = "John"  <br>
+      if name in ["John", "Rick"]: <br>
+      &nbsp print("Your name is either John or Rick.")</code>
+      <p>Python uses indentation to define code blocks, instead of brackets. The standard Python indentation is 4 spaces, although tabs and any other space size will work, as long as it is consistent. Notice that code blocks do not need any termination.</p>
+    </section>
+    <section class="main-section" id="functions">
+      <header>
+        <h1>Functions</h1>
+      </header>
+      <h3>What are Functions?</h3>
+      <p>Functions are a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time. Also functions are a key way to define interfaces so programmers can share their code.</p>
+      <h3>How do you write functions in Python?</h3>
+      <p>As we have seen on previous tutorials, Python makes use of blocks.</p>
+
+      <p> A block is a area of code of written in the format of:</p>
+
+
+      <code>block_head:
+          &nbsp 1st block line <br>
+          &nbsp 2nd block line <br>
+        ...</code>
+      <p>Where a block line is more Python code (even another block), and the block head is of the following format: block_keyword block_name(argument1,argument2, ...) Block keywords you already know are "if", "for", and "while".</p>
+      <p>Functions in python are defined using the block keyword "def", followed with the function's name as the block's name. For example:</p>
+      <code>def my_function():
+        &nbsp print("Hello From My Function!")</code>
+      <p>Functions may also receive arguments (variables passed from the caller to the function). For example:</p>
+      <code>def my_function_with_args(username, greeting):
+        &nbsp print("Hello, %s , From My Function!, I wish you %s"%
+      (username, greeting))</code>
+      <h3>How do you call functions in Python?</h3>
+      <p>Simply write the function's name followed by (), placing any required arguments within the brackets. For example, lets call the functions written above (in the previous example):</p>
+      <code># Define our 3 functions
+        def my_function():
+        &nbsp print("Hello From My Function!")
+        
+        def my_function_with_args(username, greeting):
+        &nbsp print("Hello, %s, From My Function!, I wish you %s"%(username, greeting))
+        
+        def sum_two_numbers(a, b):
+        &nbsp return a + b
+        
+        # print(a simple greeting)
+        my_function()
+        
+        #prints - "Hello, John Doe, From My Function!, I wish you a great year!"
+        my_function_with_args("John Doe", "a great year!")
+        
+        # after this line x will hold the value 3!
+        x = sum_two_numbers(1,2)</code>
+    </section>
+    <footer>
+      <p>All the documentation in this page is taken from <a href="https://www.learnpython.org/" id="footer-link">www.learnpython.org</a></p>
+    </footer>
+  </main>
+
+</body>
+
+</html>
